@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 201, 201); /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners of the thumb */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the thumb on hover */
+}
+/* Add these styles to your CSS file */
+.status-pending {
+  background-color: #ffd600;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status-confirmed {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status-canceled {
+  background-color: #ef5350;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.status-delivered {
+  background-color: rgb(73, 185, 230);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* Add this CSS to handle table overflow */
+.hr-style-2 {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
